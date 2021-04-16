@@ -1,0 +1,58 @@
+﻿@model Blogger.WebUI.Models.AdminUsersViewModel;
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!--Admin Users List-->
+<div class="mt-2">
+    <h2>Kullanıcılar</h2>
+
+    <!--Users DataTable-->
+    <div class="mt-4">
+        <table id="dataTable" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Mail Adresi</th>
+                    <th>Mail Durumu</th>
+                    <th>Rol</th>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <th>Güncelle</th>
+                        <th>Doğrula</th>
+                        <th>Sil</th>
+                    }
+                    <th>Kısıtla</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Name</td>
+                        <td>@user.Surname</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td>@user.IsEmailConfirm</td>
+                        <td>@user.Role.Name</td>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td><a class="btn btn-warning" asp-controller="User" asp-action="UpdateRole" asp-route-userId="@user.Id">Rolü Güncelle</a></td>
+                            <td><a class="btn btn-success" asp-controller="User" asp-action="ConfirmEmail" asp-route-userId="@user.Id">Mail Doğrula</a></td>
+                            <td><a class="btn btn-danger" asp-controller="User" asp-action="Delete" asp-route-userId="@user.Id">Sil</a></td>
+
+                        }
+                        <td><a class="btn btn-info" asp-controller="Ban" asp-action="Add" asp-route-userId="@user.Id">Kısıtla</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

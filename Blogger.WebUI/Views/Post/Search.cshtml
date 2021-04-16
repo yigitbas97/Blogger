@@ -1,0 +1,27 @@
+﻿@model Blogger.WebUI.Models.PostSearchViewModel;
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var post in Model.Posts)
+{
+    <!--Display Posts-->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="card-img" src="~/images/post/@post.ImageUrl" height="150" alt="@post.Title">
+                </div>
+                <div class="col-md-6" style="margin-top:auto; margin-bottom:auto;">
+                    <h3 class="card-title">@post.Title</h3>
+                    <a class="btn btn-primary" asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id">Devamını Gör →</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            Posted on @post.AddedDate.ToShortDateString(), by @post.User.UserName
+        </div>
+    </div>
+}
+

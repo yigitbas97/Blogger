@@ -1,0 +1,20 @@
+﻿@model Blogger.WebUI.Models.RoleAddViewModel;
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*---Add Role---*@
+<div class="mt-2">
+    <h2>Rol Ekle</h2>
+
+    <form asp-controller="Role" asp-action="Add" method="post">
+        <div class="form-group">
+            <label asp-for="@Model.Name"></label>
+            <input asp-for="@Model.Name" class="form-control" />
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Role Ekle</button>
+    </form>
+</div>
+

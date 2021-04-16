@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="mt-2">
+    <!--Breadcrumb-->
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+
+    <!--Information Cards-->
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-4">
+                <div class="card-body">Kategoriler</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" asp-controller="Admin" asp-action="Categories">Detayları Gör</a>
+                    <div class="small text-white"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> Font Awesome fontawesome.com --></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">Paylaşımlarınız</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" asp-controller="Admin" asp-action="Posts">Detayları Gör</a>
+                    <div class="small text-white"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> Font Awesome fontawesome.com --></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4">
+                <div class="card-body">Kullanıcılar </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" asp-controller="Admin" asp-action="Users">Detayları Gör</a>
+                    <div class="small text-white"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> Font Awesome fontawesome.com --></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-body">Kısıtlamalar</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" asp-controller="Admin" asp-action="Bans">Detayları Gör</a>
+                    <div class="small text-white"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> Font Awesome fontawesome.com --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Clock and Calendar-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="calendar-container"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/CalendarWidget/jquery.min.js"></script>
+<script src="~/CalendarWidget/calendar.min.js"></script>
+
+<script>
+    $(function () {
+        $('.calendar-container').calendar();
+    });
+
+    $('.calendar-container').calendar({
+        date: new Date() // today
+    });
+
+    $('.calendar-container').calendar({
+        weekDayLength: 2
+    });
+
+    $('.calendar-container').calendar({
+        date: new Date(),
+        disable: function (date) {
+            return date < new Date();
+        }
+    });
+
+    $('.calendar-container').calendar({
+        onClickDate: function (date) {
+            // do something
+        }
+    });
+
+    $('.calendar-container').calendar({
+
+        // text for prev/next buttons
+        prevButton: "Prev",
+        nextButton: "Next",
+
+        // custom separator between the month and the year in the month view.
+        monthYearSeparator: " ",
+
+        // false = 4 months in a row
+        showThreeMonthsInARow: true,
+
+        // whether to change either month or year
+        enableMonthChange: true,
+
+        // whether to disable year view
+        enableYearView: true,
+
+        // shows a Today button on the bottom of the calendar
+        showTodayButton: true,
+        todayButtonContent: "Today",
+
+        // highlights all other dates with the same week-day
+        highlightSelectedWeekday: true,
+
+        // highlights the selected week that contains the selected date
+        highlightSelectedWeek: true,
+
+        // whether to enable/disable the year selector
+        showYearDropdown: false,
+
+        // min/max dates
+        // Date Object or Date String
+        min: null,
+        max: null
+
+    });
+
+    $('.calendar-container').calendar({
+
+        onChangeMonth: function (date) { },
+        onClickToday: function (date) { },
+        onClickMonthNext: function (date) { },
+        onClickMonthPrev: function (date) { },
+        onClickYearNext: function (date) { },
+        onClickYearPrev: function (date) { },
+        onShowYearView: function (date) { },
+        onSelectYear: function (date) { },
+
+    });
+</script>

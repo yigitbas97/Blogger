@@ -1,0 +1,296 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Business\\Blogger.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Business\\Blogger.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Business\\Blogger.Business.csproj",
+        "projectName": "Blogger.Business",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Business\\Blogger.Business.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\Blogger.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\Blogger.DataAccess.csproj"
+              },
+              "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj",
+        "projectName": "Blogger.Core",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\Blogger.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\Blogger.DataAccess.csproj",
+        "projectName": "Blogger.DataAccess",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\Blogger.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj"
+              },
+              "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj",
+        "projectName": "Blogger.Entities",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\Blogger.Entities.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\YazilimNotlarim\\OnemliProjeler\\Blogger\\Blogger.Core\\Blogger.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

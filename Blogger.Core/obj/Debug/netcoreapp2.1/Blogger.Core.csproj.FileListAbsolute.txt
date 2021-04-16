@@ -1,0 +1,9 @@
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\bin\Debug\netcoreapp2.1\Blogger.Core.deps.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\bin\Debug\netcoreapp2.1\Blogger.Core.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\bin\Debug\netcoreapp2.1\Blogger.Core.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.AssemblyInfoInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.AssemblyInfo.cs
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.csproj.CoreCompileInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Core\obj\Debug\netcoreapp2.1\Blogger.Core.csprojAssemblyReference.cache

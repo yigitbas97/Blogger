@@ -1,0 +1,55 @@
+﻿@model Blogger.WebUI.Models.AccountProfileViewModel; 
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <h2>Profilim</h2>
+        <br />
+        
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">İsim Soyisim</th>
+                    <th scope="col">Kullanıcı Adı</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>@Model.User.Name @Model.User.Surname</th>
+                    <td>@Model.User.UserName</td>
+                    <td>@Model.User.Email</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+
+        <p>Şifrenizi değiştirmek istiyorsanız lütfen mevcut şifrenizi ve yeni oluşturmak istediğiniz şifrenizi giriniz.</p>
+
+        <form asp-controller="Account" asp-action="ChangePassword" method="post">
+            <div class="form-group">
+                <label>Mevcut Şifreniz</label>
+                <input type="password" asp-for="@Model.CurrentPassword" class="form-control" />
+                <span asp-validation-for="@Model.CurrentPassword"></span>
+            </div>
+            <div class="form-group">
+                <label>Yeni Şifreniz</label>
+                <input type="password" asp-for="@Model.NewPassword" class="form-control" />
+                <span asp-validation-for="@Model.NewPassword"></span>
+            </div>
+            <div class="form-group">
+                <label>Yeni Şifre Doğrulama</label>
+                <input type="password" asp-for="@Model.ConfirmPassword" class="form-control" />
+                <span asp-validation-for="@Model.ConfirmPassword"></span>
+            </div>
+
+            <input type="hidden" asp-for="@Model.UserId" />
+            <button type="submit" class="btn btn-success">Şifremi Değiştir</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,75 @@
+﻿@model Blogger.WebUI.Models.PostUpdateViewModel;
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!---Update Post Form--->
+<div class="mt-2">
+    <h2>Paylaşım Güncelle</h2>
+
+    <form asp-controller="Post" asp-action="Update" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-10">
+                    <label asp-for="@Model.Image" class="control-label"></label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input asp-for="@Model.Image" type="file" class="custom-file-input" id="postImage" aria-describedby="inputGroupFileAddon01" onchange="PreviewImage();">
+                            <label class="custom-file-label" for="postImage">Choose file</label>
+                            <span asp-validation-for="@Model.Image" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img id="uploadPreview" style="width: 100px; height: 100px;" src="~/images/post/@Model.ImageUrl" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Title"></label>
+            <input asp-for="@Model.Title" class="form-control" />
+            <span asp-validation-for="@Model.Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            @Html.TextAreaFor(model => model.PostContent, new { @id = "editor1" })
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.CategoryId"></label>
+            <select asp-for="@Model.CategoryId" class="form-control" asp-items="@(new SelectList(Model.Categories,"Id","Name"))"></select>
+            <span asp-validation-for="@Model.CategoryId"></span>
+        </div>
+
+        <input type="hidden" asp-for="@Model.Id" />
+        <button type="submit" class="btn btn-success btn-lg btn-block">Paylaşım Güncelle</button>
+    </form>
+</div>
+
+<!--CkEditorScript-->
+<script src="~/ckeditor/ckeditor.js"></script>
+
+<!--CkEditor-->
+<script type="text/javascript">
+    var editor = CKEDITOR.instances['editor1'];
+    if (editor) { editor.destroy(true); }
+    CKEDITOR.replace('editor1', {
+        enterMode: CKEDITOR.ENTER_BR,
+    });
+</script>
+
+<!--Display Selected Image From Input-->
+<script type="text/javascript">
+
+    function PreviewImage() {
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("postImage").files[0]);
+
+        oFReader.onload = function (oFREvent) {
+            document.getElementById("uploadPreview").src = oFREvent.target.result;
+        };
+    };
+
+</script>

@@ -1,0 +1,17 @@
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.DataAccess.deps.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.DataAccess.runtimeconfig.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.DataAccess.runtimeconfig.dev.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.DataAccess.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.DataAccess.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.Core.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.Entities.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.Core.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\bin\Release\netcoreapp2.1\Blogger.Entities.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.csprojAssemblyReference.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.AssemblyInfoInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.AssemblyInfo.cs
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.csproj.CopyComplete
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.DataAccess\obj\Release\netcoreapp2.1\Blogger.DataAccess.genruntimeconfig.cache

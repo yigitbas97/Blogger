@@ -1,0 +1,71 @@
+﻿@model Blogger.WebUI.Models.PostIndexViewModel;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!---Control Count of Posts--->
+
+@if (Model.Posts.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">Bu kategoriye ait kayıtlı paylaşım bulunamadı !</div>
+}
+
+else
+{
+    @foreach (var post in Model.Posts)
+    {
+        <!--Display Posts-->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="card-img" src="~/images/post/@post.ImageUrl" height="150" alt="@post.Title">
+                    </div>
+                    <div class="col-md-6" style="margin-top:auto; margin-bottom:auto;">
+                        <h3 class="card-title">@post.Title</h3>
+                        <a class="btn btn-primary" asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id">Devamını Gör →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on @post.AddedDate.ToShortDateString(), by @post.User.UserName
+            </div>
+        </div>
+    }
+
+    <!--Pagination-->
+    <ul class="pagination justify-content-center mb-4">
+        @if (Model.CurrentPage - 1 > 0)
+        {
+            var previousPage = Model.CurrentPage - 1;
+
+            <li class="page-item">
+                <a class="page-link" href="/post/index/?page=@previousPage&categoryId=@Model.CurrentCategory">← Older</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item disabled">
+                <a class="page-link" href="#">← Older</a>
+            </li>
+        }
+
+        @if (Model.CurrentPage + 1 <= Model.PageNumber)
+        {
+            var nextPage = Model.CurrentPage + 1;
+
+            <li class="page-item">
+                <a class="page-link" href="/post/index/?page=@nextPage&categoryId=@Model.CurrentCategory">Newer →</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Newer →</a>
+            </li>
+        }
+    </ul>
+}
+

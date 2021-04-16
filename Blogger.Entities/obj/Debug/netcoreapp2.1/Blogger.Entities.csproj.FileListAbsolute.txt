@@ -1,0 +1,12 @@
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\bin\Debug\netcoreapp2.1\Blogger.Entities.deps.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\bin\Debug\netcoreapp2.1\Blogger.Entities.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\bin\Debug\netcoreapp2.1\Blogger.Entities.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\bin\Debug\netcoreapp2.1\Blogger.Core.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\bin\Debug\netcoreapp2.1\Blogger.Core.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.csprojAssemblyReference.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.AssemblyInfoInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.AssemblyInfo.cs
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.csproj.CoreCompileInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.csproj.CopyComplete
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Entities\obj\Debug\netcoreapp2.1\Blogger.Entities.pdb

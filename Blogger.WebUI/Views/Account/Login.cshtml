@@ -1,0 +1,107 @@
+﻿@model Blogger.WebUI.Models.LoginViewModel;
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gençlerin Blogu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/AccountTemplate/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/AccountTemplate/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+    <!--Displaying Message-->
+    @if (TempData["Message"] != null)
+    {
+        <div class="container" style="margin-top:10px; text-align:center;">
+            @{
+                var classString = "alert alert-dismissible alert-" + TempData["MessageState"];
+                <div class="@classString" role="alert">@TempData["message"]</div>
+            }
+        </div>
+    }
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+                    <span class="login100-form-title-1">
+                        Genclerin Blogu - Giris Yap
+                    </span>
+                </div>
+
+                <form class="login100-form validate-form" asp-controller="Account" asp-action="Login" method="post">
+                    <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                        <span class="label-input100">Kullanıcı adı</span>
+                        <input class="input100" asp-for="@Model.Username" type="text" name="Username" placeholder="Kulanıcı adınızı girin">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                        <span class="label-input100">Parola</span>
+                        <input class="input100" asp-for="@Model.Password" type="password" name="Password" placeholder="Parolanızı girin">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="flex-sb-m w-full p-b-30">
+                        <div>
+                            <a asp-controller="Account" asp-action="ForgotPassword" class="txt1">
+                                Şifremi unuttum ?
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" type="submit">
+                            Giriş Yap
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/AccountTemplate/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/AccountTemplate/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/AccountTemplate/js/main.js"></script>
+
+</body>
+</html>
+

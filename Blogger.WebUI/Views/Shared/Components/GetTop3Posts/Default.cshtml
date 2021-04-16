@@ -1,0 +1,18 @@
+﻿@model Blogger.WebUI.Models.GetTop3PostsViewModel;
+@{
+    Layout = null;
+}
+
+@foreach (var post in Model.Posts)
+{
+    <div class="row mb-2">
+        <div class="col-lg-5">
+            <img class="card-img-top" src="~/images/post/@post.ImageUrl" alt="@post.Title">
+        </div>
+        <div class="col-lg-7">
+            <a class="card-title" asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id">@post.Title</a>
+        </div>
+    </div>
+}
+
+

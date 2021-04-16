@@ -1,0 +1,104 @@
+﻿@model Blogger.WebUI.Models.PostDetailViewModel;
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/LayoutDetail.cshtml";
+}
+
+<!-- Title -->
+<h1 class="mt-4">@Model.Post.Title</h1>
+
+<!-- Author -->
+<p class="lead">
+    by
+    <a href="#">@Model.Post.User.UserName</a>
+</p>
+
+<hr>
+
+<!-- Date/Time -->
+<p>Posted on @Model.Post.AddedDate</p>
+
+<hr>
+
+<!-- Preview Image -->
+<center>
+    <img class="card-img" width="500" height="300" src="~/images/post/@Model.Post.ImageUrl" alt="@Model.Post.Title">
+</center>
+
+<hr>
+
+<!-- Post Content -->
+@Html.Raw(Model.Post.PostContent)
+
+<hr>
+
+
+@if (Model.Post.Comments.Count == 0)
+{
+    <div class="alert alert-warning" role="alert">
+        Bu paylaşıma henüz hiç yorum yapılmadı !
+    </div>
+}
+<!-- Comments Form -->
+<div class="card my-4">
+    <h5 class="card-header">Yorum Yap:</h5>
+    <div class="card-body">
+        <form asp-controller="Comment" asp-action="Add" method="post">
+            <div class="form-group">
+                <textarea id="postComment" name="postComment" class="form-control" rows="3"></textarea>
+            </div>
+            <input type="hidden" id="postId" name="postId" value="@Model.Post.Id" />
+            <button type="submit" class="btn btn-primary">Paylaş</button>
+        </form>
+    </div>
+</div>
+
+@if (Model.Post.Comments.Count > 0)
+{
+    foreach (var comment in Model.Post.Comments)
+    {
+        <!-- Single Comment -->
+        <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="~/images/icon/usericon.png" width="50" height="50" alt="User Icon">
+
+            <div class="media-body">
+                <h5 class="mt-0">@comment.User.Name @comment.User.Surname</h5>
+                @comment.CommentContent
+                <br />
+
+                <!--Reply Form-->
+                <a class="btn btn-primary my-2" data-toggle="collapse" href="#Comment-@comment.Id" role="button" aria-expanded="false" aria-controls="Comment-@comment.Id">Cevapla</a>
+                <div class="collapse multi-collapse" id="Comment-@comment.Id">
+                    <div class="card card-body my-2">
+                        <form asp-controller="Reply" asp-action="Add" method="post">
+                            <div class="form-group">
+                                <textarea id="replyContent" name="replyContent" class="form-control" rows="2"></textarea>
+                            </div>
+                            <input type="hidden" id="postId" name="postId" value="@Model.Post.Id" />
+                            <input type="hidden" id="commentId" name="commentId" value="@comment.Id" />
+                            <button type="submit" class="btn btn-primary">Paylaş</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!--Display Replies-->
+                @if (comment.Replies.Count > 0)
+                {
+                    foreach (var reply in comment.Replies)
+                    {
+                        <!--Replies-->
+                        <div class="media mt-4">
+                            <img class="d-flex mr-3 rounded-circle" src="~/images/icon/usericon.png" width="50" height="50" alt="User Icon">
+                            <div class="media-body">
+                                <h5 class="mt-0">@reply.User.Name @reply.User.Surname</h5>
+                                @reply.ReplyContent
+                            </div>
+                        </div>
+                        <hr />
+                    }
+                }
+            </div>
+        </div>
+    }
+}
+

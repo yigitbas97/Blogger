@@ -1,0 +1,16 @@
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Business.deps.json
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Business.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Business.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Core.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.DataAccess.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Entities.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.DataAccess.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Entities.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\bin\Release\netcoreapp2.1\Blogger.Core.pdb
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.csprojAssemblyReference.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.AssemblyInfoInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.AssemblyInfo.cs
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.csproj.CoreCompileInputs.cache
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.csproj.CopyComplete
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.dll
+C:\Users\yiba_\Desktop\YazilimNotlarim\OnemliProjeler\Blogger\Blogger.Business\obj\Release\netcoreapp2.1\Blogger.Business.pdb

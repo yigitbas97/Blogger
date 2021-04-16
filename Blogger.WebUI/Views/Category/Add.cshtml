@@ -1,0 +1,22 @@
+﻿@model Blogger.WebUI.Models.CategoryAddViewModel;
+@{
+    ViewData["Title"] = "Add Category";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*---Add Category Form---*@
+<div class="mt-2">
+    <h2>Kategori Ekle</h2>
+
+    <form asp-controller="Category" asp-action="Add" method="post">
+        <div class="form-group">
+            <label asp-for="@Model.Name"></label>
+            <input asp-for="@Model.Name" class="form-control" />
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-lg btn-block">Kategori Ekle</button>
+    </form>
+</div>
+
+

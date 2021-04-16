@@ -1,0 +1,21 @@
+﻿@model Blogger.WebUI.Models.UserUpdateRoleViewModel;
+@{
+    ViewData["Title"] = "UpdateRole";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!--Update User Role-->
+<div class="mt-2">
+    <h2>Kullanıcı Rolünü Güncelle</h2>
+
+    <form class="mt-2" asp-controller="User" asp-action="UpdateRole" method="post">
+        <div class="form-group">
+            <label asp-for="@Model.RoleId"></label>
+            <select asp-for="@Model.RoleId" class="form-control" asp-items="@(new SelectList(Model.Roles,"Id","Name"))"></select>
+            <span asp-validation-for="@Model.RoleId" class="text-danger"></span>
+        </div>
+
+        <input type="hidden" asp-for="@Model.UserId" />
+        <button type="submit" class="btn btn-success btn-lg btn-block">Güncelle</button>
+    </form>
+</div>

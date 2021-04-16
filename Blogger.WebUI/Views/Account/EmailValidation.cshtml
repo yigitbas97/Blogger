@@ -1,0 +1,27 @@
+﻿@model Blogger.WebUI.Models.EmailValidationViewModel;
+@{
+    ViewData["Title"] = "EmailValidation";
+    Layout = "_LayoutAccount";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <h2>Email Doğrulama</h2>
+        <br />
+        <p>Mail adresinize gönderilen <strong>kodu</strong> aşağıya girerek mailinizi <strong>doğrulayabilirsiniz.</strong></p>
+        <p>Doğrulama kodu zaman aşımı 3 dakikadır.</p>
+
+        <form asp-controller="Account" asp-action="EmailValidation" method="post">
+            <div class="form-group">
+                <label>Doğrulama Kodu</label>
+                <input type="text" asp-for="@Model.Code" class="form-control" />
+                <span asp-validation-for="@Model.Code"></span>
+            </div>
+            <input type="hidden" asp-for="@Model.Email" />
+            <input type="hidden" asp-for="@Model.Username" />
+            <button type="submit" class="btn btn-success">Doğrula</button>
+        </form>
+    </div>
+</div>
+
+
