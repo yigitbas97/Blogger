@@ -9,7 +9,7 @@ Uygulamanın çalışır hali için https://www.genclerinblogu.com adresinden si
   
 Kullanılan Teknolojiler ve Yöntemler
 
-•Asp.Net Core MVC -> Sunum Katmanı
+• Asp.Net Core MVC -> Sunum Katmanı
 
 •	MSSQL -> Veritabanı
 
