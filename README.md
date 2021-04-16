@@ -29,7 +29,7 @@ Kullanılan Teknolojiler ve Yöntemler
 
 Uygulama Özellikleri
 
-•	Üyelik ve Kayıt Sistemi(Email Doğrulama,Şifremi Unuttum)
+•	Üyelik ve Giriş Sistemi(Email Doğrulama,Şifremi Unuttum)
 
 •	Paylaşımlar -> Ekle, Oku, Sil, Güncelle, Sayfala, Ara
 
