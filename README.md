@@ -3,7 +3,7 @@
 GENÇLERİN BLOGU
 
 Bu uygulama, kullanıcıların farklı kategorilerde, farklı paylaşımlar yapmalarına imkan sağlamak amacıyla geliştirdiğim bir blog uygulamasıdır.
-Uygulamanın çalışır hali için https://www.genclerinblogu.com adresinden sitemi ziyaret edebilirsiniz.
+
 
 ------------------------------------------------------------------------------------
   
